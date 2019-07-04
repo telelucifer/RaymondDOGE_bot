@@ -10,15 +10,16 @@
 CMD*/
 
 var buttons = [
-{title : "🔄 Check 🔄", command :"/joined"}
+{title : "✅ Joined", command :"/joined"}
 ];
 
 
-Bot.sendInlineKeyboard (buttons,"✅ You must Have to Join [@RaymondDOGE_Payments] in order to use this bot")
+Bot.sendInlineKeyboard (buttons,"⚠️ You must Have to Join [@RaymondDOGE_Payments] in order to use this bot");
+
 
 
 function doTouchOwnLink(){
-  Bot.sendMessage("You can't reffer yourself.");
+  Bot.sendMessage("");
 }
 
 function doAttracted(channel){
@@ -26,15 +27,14 @@ function doAttracted(channel){
 }
 
 function doAtractedByUser(refUser){
-  hello("Referal from user: " + 
-    refUser.first_name + " @" + refUser.username);
+  hello("");
   
   Bot.sendMessageToChatWithId(refUser.chatId, 
-    "You Have just got an Refferal: @" + user.username);
+    "You just reffered a new user: @" + user.username);
 }
 
 function doAlreadyAttracted(){
-  Bot.sendMessage("You have already Joined The Bot");
+  Bot.sendMessage("");
 }
 
 let trackOptions = {
