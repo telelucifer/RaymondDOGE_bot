@@ -5,10 +5,7 @@
   auto_retry_time: 
   folder: 
   answer: Please enter your *Message* Here :
-
-  <<KEYBOARD
-
-  KEYBOARD
+  keyboard: 
   aliases: 📞 support
 CMD*/
 
